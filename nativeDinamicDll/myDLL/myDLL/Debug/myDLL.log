@@ -1,0 +1,14 @@
+﻿Сборка начата 19.08.2017 13:11:36.
+     1>Проект "c:\Users\ture\documents\visual studio 2013\Projects\myDLL\myDLL\myDLL.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\Java\jdk1.8.0_144\include\win32" /I"C:\Program Files\Java\jdk1.8.0_144\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt DLLMain.c
+         DLLMain.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\ture\documents\visual studio 2013\Projects\myDLL\Debug\myDLL.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\ture\documents\visual studio 2013\Projects\myDLL\Debug\myDLL.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\ture\documents\visual studio 2013\Projects\myDLL\Debug\myDLL.lib" /MACHINE:X86 /DLL Debug\DLLMain.obj
+            Создается библиотека c:\users\ture\documents\visual studio 2013\Projects\myDLL\Debug\myDLL.lib и объект c:\users\ture\documents\visual studio 2013\Projects\myDLL\Debug\myDLL.exp
+         myDLL.vcxproj -> c:\users\ture\documents\visual studio 2013\Projects\myDLL\Debug\myDLL.dll
+     1>Сборка проекта "c:\Users\ture\documents\visual studio 2013\Projects\myDLL\myDLL\myDLL.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:05.48

@@ -1,0 +1,16 @@
+﻿Сборка начата 19.08.2017 16:01:45.
+     1>Проект "c:\Users\ture\documents\visual studio 2013\Projects\myDLL\myDLL\myDLL.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\Java\jdk1.8.0_144\include" /I"C:\Program Files\Java\jdk1.8.0_144\include\win32" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt DLLMain.c
+         DLLMain.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\ture\documents\visual studio 2013\Projects\myDLL\x64\Release\myDLL.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\ture\documents\visual studio 2013\Projects\myDLL\x64\Release\myDLL.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\ture\documents\visual studio 2013\Projects\myDLL\x64\Release\myDLL.lib" /MACHINE:X64 /DLL x64\Release\DLLMain.obj
+            Создается библиотека c:\users\ture\documents\visual studio 2013\Projects\myDLL\x64\Release\myDLL.lib и объект c:\users\ture\documents\visual studio 2013\Projects\myDLL\x64\Release\myDLL.exp
+         Создание кода
+         Создание кода завершено
+         myDLL.vcxproj -> c:\users\ture\documents\visual studio 2013\Projects\myDLL\x64\Release\myDLL.dll
+     1>Сборка проекта "c:\Users\ture\documents\visual studio 2013\Projects\myDLL\myDLL\myDLL.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:02.93
