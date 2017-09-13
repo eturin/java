@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Jetty WebSocket Chat</title>
+    <script type="text/javascript">
+        var ws;
+        //инициализация дополнительного соединения (после загрузки всего body)
+        function init() {
+            //создаем Web-сокет
+            ws = new WebSocket("ws://localhost:8080/chat");
+            //связываем с сокетом событие на открытие
+            ws.onopen    = function (event) {}
+            //связываем с сокетом событие на получение сообщения
+            ws.onmessage = function (event) {
+                var $textarea = document.getElementById("all_messages");
+                $textarea.value = $textarea.value + event.data + "\n";
+            }
+            //связываем с сокетом событие на закрытие
+            ws.onclose = function (event) {}
+        };
+
+        //отправка сообщения в сокет
+        function sendMessage() {
+            var msg  = document.getElementById("msg");
+            var nik = document.getElementById("nik");
+
+            if(msg.value=="" || nik.value=="")
+                //нечего отправлять
+                alert("Ник и сообщение не могут быть пустыми");
+            else if(ws.readyState==1) {
+                ws.send(nik.value + ":" + msg.value);
+                msg.value = '';
+            }else
+                msg.value = 'нет соединения с сервером';
+        }
+        //очистка поля
+        function clearMessage() {
+            var messageField  = document.getElementById("msg");
+            messageField.value = '';
+        }
+        //отправка по Enter
+        function search(elem) {
+            if(event.keyCode == 13) {
+                sendMessage();
+            }
+        }
+    </script>
+</head>
+
+<body onload="init();">
+    <div>
+        <p>Ваш ник: <input id="nik" value="anonymous"/> </p>
+        Содержание чатика:<br>
+        <textarea id="all_messages" rows="20" cols="50" readonly="readonly"></textarea>
+        <br>
+        <input type="button" value="X"          onclick  ="clearMessage();"/>
+        <input type="text"   id="msg" size="32" onkeydown="search(this)"   />
+        <input type="button" value="Отправить"  onclick  ="sendMessage();" />
+
+    </div>
+</body>
+
+</html>
